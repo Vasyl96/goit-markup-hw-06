@@ -267,9 +267,27 @@ body {
 }
 .input-text,
 .textarea-text {
-  padding: 0;
+  padding: 10px 0 16px;
   height: 40px;
   width: 440px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea-text {
+  resize: none;
+  height: 120px;
+  padding: 10px 16px;
+}
+
+.textarea-text::placeholder,
+.input-text::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .feadback-group {
