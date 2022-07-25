@@ -64,9 +64,11 @@
                     <li class="modal-item">
                         <label for="text" class="label-text">Ім'я</label>
                         <input type="text" name="user-name" class="input-text" id="text">
-                        <svg class="feadback-icon" width="18" height="18">
-                            <use href="./img/sprite.svg#icon-person"></use>
-                        </svg>
+                        <span class="feadback-icon">
+                            <svg class="icon" width="18" height="18">
+                                <use href="./img/sprite.svg#icon-person"></use>
+                            </svg>
+                        </span>
                     </li>
                     <!-- User phone -->
                     <li class="modal-item">
@@ -86,18 +88,17 @@
                     </li>
                     <!-- User comment -->
                     <li class="modal-item">
-                        <label class="label-text">Коментар
-                            <textarea name="feadback" rows="7" class="textarea-text"
-                                placeholder="Введіть текст"></textarea>
-                        </label>
+                        <label for="comment" class="label-text">Коментар</label>
+                        <textarea name="feadback" rows="7" class="textarea-text" id="comment"
+                            placeholder="Введіть текст"></textarea>
                     </li>
                 </ul>
                 <!-- User agreement -->
                 <div class="modal-adreement">
                     <input type="checkbox" name="user-adreement" value="" class="" id="checkbox">
                     <label for="checkbox" class="label-adreement">Погоджуюся з розсилкою та приймаю <span
-                            class="adreement-text">Умови
-                            договору</span></label>
+                            class="adreement-text"><a class="agreement-link" href="#">Умови
+                                договору</a></span></label>
                 </div>
                 <button type="submit" class="form-btn">Відправити</button>
             </form>
