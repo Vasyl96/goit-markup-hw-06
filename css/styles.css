@@ -549,7 +549,7 @@ body {
 }
 .preference-title,
 .social-text,
-.label-title {
+.subscription-text {
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -936,6 +936,7 @@ address {
   fill: var(--white-social-bg-cl, #ffffff);
 }
 .social-text {
+  display: inline-block;
   color: var(--white-txt-cl, #ffffff);
   margin-bottom: 20px;
 }
@@ -951,7 +952,7 @@ address {
   display: flex;
 }
 
-.label-title {
+.subscription-text {
   display: block;
   color: var(--white-txt-cl, #ffffff);
   margin-bottom: 20px;
