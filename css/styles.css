@@ -269,8 +269,11 @@ body {
   color: var(--dark-main-txt-cl, #212121);
 }
 
-.modal-list,
-.modal-item {
+.user-contact,
+.user-name,
+.user-phone,
+.user-email,
+.user-coment {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,12 +351,10 @@ body {
   text-align: center;
 }
 
-.modal-list {
-  margin: 0;
-  padding: 0;
-}
-
-.modal-item {
+.user-name,
+.user-phone,
+.user-email,
+.user-coment {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -362,13 +363,13 @@ body {
   padding: 0;
 }
 
-.modal-item:last-child {
+.user-coment:last-child {
   margin-bottom: 20px;
 }
 
 /* Checbox agreement */
 
-.modal-adreement {
+.user-adreement {
   position: relative;
   display: inline-block;
   padding-left: 40px;
@@ -1055,7 +1056,6 @@ address {
 .portfolio-list,
 .filters-list,
 .icon-list,
-.customer-list,
-.modal-list {
+.customer-list {
   list-style: none;
 }

@@ -59,9 +59,9 @@
             <strong class="modal-text">Залиште свої дані, ми вам передзвонимо</strong>
             <form name="modal-form" autocomplete="on" novalidate>
                 <!-- User data -->
-                <ul class="modal-list">
+                <div class="user-contact">
                     <!-- User name -->
-                    <li class="modal-item">
+                    <div class="user-name">
                         <label for="text" class="label-text">Ім'я</label>
                         <input type="text" name="user-name" class="input-text" id="text">
                         <span class="feadback-icon">
@@ -69,32 +69,32 @@
                                 <use href="./img/sprite.svg#icon-person"></use>
                             </svg>
                         </span>
-                    </li>
+                    </div>
                     <!-- User phone -->
-                    <li class="modal-item">
+                    <div class="user-phone">
                         <label for="phone" class="label-text">Телефон</label>
                         <input type="tel" name="user-phone" class="input-text" id="phone">
                         <svg class="feadback-icon" width="18" height="18">
                             <use href="./img/sprite.svg#icon-phone"></use>
                         </svg>
-                    </li>
+                    </div>
                     <!-- User email -->
-                    <li class="modal-item">
+                    <div class="user-email">
                         <label for="email" class="label-text">Пошта</label>
                         <input type="email" name="user-name" class="input-text" id="email">
                         <svg class="feadback-icon" width="18" height="18">
                             <use href="./img/sprite.svg#icon-email"></use>
                         </svg>
-                    </li>
+                    </div>
                     <!-- User comment -->
-                    <li class="modal-item">
+                    <div class="user-coment">
                         <label for="comment" class="label-text">Коментар</label>
                         <textarea name="feadback" rows="7" class="textarea-text" id="comment"
                             placeholder="Введіть текст"></textarea>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <!-- User agreement -->
-                <div class="modal-adreement">
+                <div class="user-adreement">
                     <input type="checkbox" name="policy" value="" class="checkbox-agreement" id="checkbox">
                     <!-- <span class="checkbox-icon"></span> -->
                     <label for="checkbox" class="label-adreement">Погоджуюся з розсилкою та приймаю
@@ -373,7 +373,7 @@
             <!-- Footer subscription -->
             <div class="footer-subscription">
                 <form name="form-subscription" autocomplete="off">
-                    <strong for="user-email" class="subscription-text">Підпишіться на розсилку</strong>
+                    <strong class="subscription-text">Підпишіться на розсилку</strong>
                     <div class="send-email">
                         <input type="email" name="email" class="input-email" placeholder="E-mail" id="user-email">
                         <button type="submit" class="send-btn">Підписатися
